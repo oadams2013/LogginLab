@@ -31,4 +31,14 @@ public class LogginLabTest {
             }
         }
     }
-}
+    @org.junit.Test
+    public void thresholdReached(){
+        Integer finalLimit = 10;
+
+        LogginLab lab = new LogginLab();
+        boolean test = lab.thresholdReached(finalLimit);
+        assertTrue(lab.thresholdReached(10));
+
+        }
+
+    }
